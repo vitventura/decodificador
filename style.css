@@ -1,0 +1,390 @@
+:root {
+  --color-light: #fff;
+  --color-white: #fff;
+  --border-radius-1: 0.4rem;
+  --color-background: #a3a3a3;
+}
+
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: white;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  
+}
+body {
+  background: var(--color-background);
+  
+}
+main {
+  display: flex;
+  gap: 2rem;
+  margin-left: 80px;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+img {
+  margin: 1rem 19rem;
+  filter: drop-shadow(7px 7px 3px black);
+}
+
+.theme-toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.theme-toggler span {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: var(--border-radius-1);
+}
+
+.theme-toggler span.active {
+  background: #0a3871;
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+.theme-toggler span.active2 {
+  background: black;
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+img {
+  margin: 1rem 19rem;
+  filter: drop-shadow(7px 7px 3px black);
+}
+
+.main-content > textarea {
+  border: none;
+  margin-top: 90px;
+  text-transform: lowercase;
+  position: absolute;
+  left: 7%;
+  background: none;
+}
+.text-area{
+  color: #0a3871;
+}
+
+::placeholder {
+  color: #0a3871;
+  line-height: 3rem;
+  background: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+.mensagem {
+  background-image: url(./imagens/background-image.svg);
+  background-repeat: no-repeat;
+  border-radius: 1.5rem;
+  color: #0a3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: absolute;
+  left: 65%;
+  height: 19rem;
+  bottom: 2%;
+}
+.mensagem:focus {
+  outline: none;
+}
+.btn-copiar {
+  border: 1px solid #0a3871;
+  width: 300px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: 10rem;
+  position: relative;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+  margin-top: 17rem;
+  margin-left: 20.5rem;
+}
+.btn-copiar:hover {
+  border: none;
+  color: white;
+  transition: all 1.5s ease;
+  
+  background: linear-gradient(50deg, #0a3871, black);
+  letter-spacing: 5px;
+}
+.principal-content {
+  display: flex;
+  margin-top: 18px;
+  gap: 20px;
+}
+
+.aviso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 80%;
+  padding-left: 10px;
+}
+
+.aviso h6 {
+  color: #495057;
+  font-size: 15px;
+}
+.aviso h6 span {
+  color: #0a3871;
+  font-size: 15px;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 20%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.container2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 33%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+.center {
+  width: 160px;
+  height: 60px;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #0a3871;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-weight: 700;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #0a3871;
+  letter-spacing: 1px;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+@media (max-width: 1280px) {
+  main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container2 {
+    margin-left: 1.2rem;
+  }
+  .mensagem {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    height: 80%;
+  }
+  .btn-copiar {
+    position: relative;
+    left: 11rem;
+    bottom: 18rem;
+    width: 270px;
+  }
+  .aviso {
+    position: relative;
+    top: 0.6rem;
+    right: 5.5rem;
+  }
+
+  .aviso h6 span {
+    font-size: 19px;
+  }
+  .aviso h6 {
+    font-size: 19px;
+  }
+  .theme-toggler {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .theme-toggler {
+    position: absolute;
+    right: 2rem;
+   width: 3rem;
+  }
+  .section-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mensagem {
+    width: 250px;
+    left: 12rem;
+  }
+  .btn-copiar {
+    position: relative;
+    margin-left: -1rem;
+    margin-top: 15.5rem;
+    width: 210px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .container {
+    margin-left: -1rem;
+    width: 200px;
+    height: 150px;
+  }
+  .container2 {
+    margin-left: 1.4rem;
+    width: 200px;
+    height: 150px;
+  }
+  .btn {
+    width: 150px;
+    height: auto;
+  }
+
+  .btn:hover svg {
+    display: none;
+  }
+  .aviso {
+    font-size: 10px;
+    padding-left: 4rem;
+    min-width: 15rem;
+    text-align: justify;
+  }
+  .aviso h6 {
+    font-size: 15px;
+  }
+  .aviso h6 span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  main {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    margin-left: -30px;
+  }
+
+  .section-main {
+    margin-right: 20rem;
+  }
+  .mensagem {
+    position: absolute;
+    top: 17rem;
+    right: 10rem;
+    left: -1.4rem;
+    background-image: none;
+    background: linear-gradient(120deg, #0a3871, black);
+    color: white;
+  }
+  .btn-copiar {
+    position: relative;
+    top: 8rem;
+    margin-right: 15px;
+  }
+  .container {
+    margin-left: 1.4rem;
+  }
+  .container2 {
+    margin-left: 5rem;
+  }
+  .btn:hover svg {
+    display: none;
+  }
+  .aviso {
+    position: absolute;
+    left: -1.7rem;
+    top: 4.5rem;
+    width: 9rem;
+  }
+  .aviso h6 {
+    min-width: 6rem;
+    font-size: 10px;
+    margin-right: 2rem;
+    text-align: justify;
+  }
+  .aviso h6 span {
+    font-size: 10px;
+  }
+}
