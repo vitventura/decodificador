@@ -20,7 +20,7 @@ La letra "u" e convertida a "ufat"
 
 
 ✔️ Requisitos
-somente letras minúsculas e sem acento
+somente letras minúsculas e sem acento,
 ao descriptografar  a palavra deve voltar ao estado normal
 Por exemplo:
 "gato" => "gaitober"
