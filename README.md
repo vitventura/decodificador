@@ -9,9 +9,13 @@ como um extra foi proposto que fizéssemos 3 botões com as funcionalidades de: 
 🔑chaves de criptografia:
 
 La letra "a" e convertida a "ai".
+
 La letra "e" e convertida a "enter".
+
 La letra "i" e convertida a "imes".
+
 La letra "o" e convertida a "ober"
+
 La letra "u" e convertida a "ufat"
 
 
