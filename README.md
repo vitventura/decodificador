@@ -4,8 +4,9 @@ projeto  pensado em criptografar e descriptografar palavras.
 Descrição:
 Encriptador de texto feito com JavaScript, HTML e CSS feito para o challenger do programa ONE de Oracle+Alura LATAM.
 
-esse desafio foi proposto para que fizéssemos uma pagina web, utilizando todo conhecimento adquirido ate o exato momento do programa
+esse desafio foi proposto para que fizéssemos uma pagina web, utilizando todo conhecimento adquirido ate o exato momento do programa,
 como um extra foi proposto que fizéssemos 3 botões com as funcionalidades de: criptografar, descriptografar e copiar
+
 🔑chaves de criptografia:
 
 La letra "a" e convertida a "ai".
